@@ -23,4 +23,4 @@ THEN I am again presented with current and future conditions for that city
 Mock-Up
 
 # Licenses Required
-No liceses required, runs in any browser
+No licenses required, runs in any browser.
