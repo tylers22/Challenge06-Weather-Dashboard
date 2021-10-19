@@ -26,31 +26,65 @@
 <body>
   <div class="jumbotron text-center">
     <h1>Weather Dashboard</h1>
-    <p>Resize this responsive page to see the effect!</p>
   </div>
 
   <div class="container">
     <div class="row">
       <div class="col-sm-4 citysearch">
-        <h3>Column 1</h3>
+        <h3>City Forecast</h3>
         <div class="content">
-          <h2>City Forecast</h2>
-            <label for="fname">Select City:</label>
+            <label for="fname">City Search: </label>
             <input type="text" id="citysearch" name="citysearch">
           <button id="search-btn" type="submit">Search</button>
         </div>
-
-        <p>Lorem ipsum dolor..</p>
       </div>
+
       <div class="col-md-8 citydisplay">
         <h3>Weather API Output (citydisplay)</h3>
-        <p>Lorem ipsum dolor..</p>
-        <p id="currentCityTemp">Temperature: </p>
+                <p id="currentCityTemp">Temperature: </p>
+                <p id="currentCityWind">Wind: </p>
+                <p id="currentCityHumidity">Humidity: </p>
+                <p id="currentCityUVI">UV Index: </p>
       </div>
-      <div class="col-sm-8 fivedayforecast">
-        <h3>Column 3</h3>
-        <p>Lorem ipsum dolor..</p>
+    <div class="container">
+      <div class="row fivedayforecast">
+        <h3>5 Day Forecast</h3>
+        <div class="col">
+          <card id="fiveday1">Day 1</card>
+          <p>Temp: </p>
+          <p>Wind: </p>
+          <p>Humidity: </p>
+        </div>
+
+        <div class="col">
+        <card id="fiveday2">Day 2</card>
+          <p>Temp: </p>
+          <p>Wind: </p>
+          <p>Humidity: </p>
+        </div>
+
+        <div class="col">
+          <card id="fiveday3">Day 3</card>
+          <p>Temp: </p>
+          <p>Wind: </p>
+          <p>Humidity: </p>
+        </div>
+
+        <div class="col">
+        <card id="fiveday4">Day 4</card>
+          <p>Temp: </p>
+          <p>Wind: </p>
+          <p>Humidity: </p>
+          </div>
+
+        <div class="col">
+          <card id="fiveday5">Day 5</card>
+          <p>Temp: </p>
+          <p>Wind: </p>
+          <p>Humidity: </p> 
+        </div>      
       </div>
+    </div>
     </div>
   </div>
 

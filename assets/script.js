@@ -29,11 +29,27 @@ function searchWeather() {
                     console.log("ONE CALL API DATA", data)
 
                     //GRAB THE HTML OBJECT AND DISPLAY DATA FROM THE API RESPONSE 
-                    document.getElementById("currentCityTemp").textContent ="Temperature: "+ data.current.temp;
-                    var day2Temp = data.daily[1].temp.day; 
-                    console.log(day2Temp); 
+                    document.getElementById("currentCityTemp").textContent ="Temperature: "+ data.current.temp+" F";
+                    document.getElementById("currentCityWind").textContent ="Wind: "+ data.current.wind_speed;
+                    document.getElementById("currentCityHumidity").textContent ="Humidity: "+ data.current.humidity;
+                    document.getElementById("currentCityUVI").textContent ="UV Index: "+ data.current.uvi;
+
+                 
                     var day1Temp = data.daily[0].temp.day; 
                     console.log(day1Temp); 
+                    var day1Wind_Speed = data.daily[0].wind_speed; 
+                    console.log(day1Wind_Speed); 
+                    var day1Humidity = data.daily[0].humidity; 
+                    console.log(day1Humidity); 
+
+                    var day2Temp = data.daily[1].temp.day; 
+                    console.log(day2Temp); 
+                    var day3Temp = data.daily[2].temp.day; 
+                    console.log(day3Temp); 
+                    var day4Temp = data.daily[3].temp.day; 
+                    console.log(day4Temp); 
+                    var day5Temp = data.daily[4].temp.day; 
+                    console.log(day5Temp); 
                 });
         });
 
