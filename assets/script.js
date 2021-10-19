@@ -42,14 +42,53 @@ function searchWeather() {
                     var day1Humidity = data.daily[0].humidity; 
                     console.log(day1Humidity); 
 
+                    document.getElementById("day1Temp").textContent ="Temperature: "+ day1Temp+" F";
+                    document.getElementById("day1Wind").textContent ="Wind: "+ day1Wind_Speed;
+                    document.getElementById("day1Humidity").textContent ="Humidity: "+ day1Humidity;
+                  
                     var day2Temp = data.daily[1].temp.day; 
                     console.log(day2Temp); 
+                    var day2Wind_Speed = data.daily[1].wind_speed; 
+                    console.log(day2Wind_Speed); 
+                    var day2Humidity = data.daily[1].humidity; 
+                    console.log(day2Humidity); 
+
+                    document.getElementById("day2Temp").textContent ="Temperature: "+ day2Temp+" F";
+                    document.getElementById("day2Wind").textContent ="Wind: "+ day2Wind_Speed;
+                    document.getElementById("day2Humidity").textContent ="Humidity: "+ day2Humidity;
+
                     var day3Temp = data.daily[2].temp.day; 
                     console.log(day3Temp); 
+                    var day3Wind_Speed = data.daily[2].wind_speed; 
+                    console.log(day3Wind_Speed); 
+                    var day3Humidity = data.daily[2].humidity; 
+                    console.log(day3Humidity); 
+
+                    document.getElementById("day3Temp").textContent ="Temperature: "+ day3Temp+" F";
+                    document.getElementById("day3Wind").textContent ="Wind: "+ day3Wind_Speed;
+                    document.getElementById("day3Humidity").textContent ="Humidity: "+ day3Humidity;
+
                     var day4Temp = data.daily[3].temp.day; 
                     console.log(day4Temp); 
+                    var day4Wind_Speed = data.daily[3].wind_speed; 
+                    console.log(day4Wind_Speed); 
+                    var day4Humidity = data.daily[3].humidity; 
+                    console.log(day4Humidity); 
+
+                    document.getElementById("day4Temp").textContent ="Temperature: "+ day4Temp+" F";
+                    document.getElementById("day4Wind").textContent ="Wind: "+ day4Wind_Speed;
+                    document.getElementById("day4Humidity").textContent ="Humidity: "+ day4Humidity;
+
                     var day5Temp = data.daily[4].temp.day; 
                     console.log(day5Temp); 
+                    var day5Wind_Speed = data.daily[4].wind_speed; 
+                    console.log(day5Wind_Speed); 
+                    var day5Humidity = data.daily[4].humidity; 
+                    console.log(day5Humidity); 
+
+                    document.getElementById("day5Temp").textContent ="Temperature: "+ day5Temp+" F";
+                    document.getElementById("day5Wind").textContent ="Wind: "+ day5Wind_Speed;
+                    document.getElementById("day5Humidity").textContent ="Humidity: "+ day5Humidity;
                 });
         });
 
@@ -57,5 +96,5 @@ function searchWeather() {
 
 }
 
-//Add Event listiner 
+//Add Event listener 
 searchBtnEl.addEventListener('click', searchWeather);
